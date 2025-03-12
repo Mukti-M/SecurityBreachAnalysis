@@ -1,68 +1,136 @@
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Security Breach Analysis  
+Security Breach Analysis
 
-**Security Breach Analysis** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+Security Breach Analysis is a comprehensive data analysis project designed to explore, analyse, and visualise cybersecurity attack data. The project aims to provide valuable insights into security threats, attack patterns, and their impact using various data analysis techniques and visualisations.
 
+Dataset Content
 
+The dataset used in this project consists of cybersecurity attack logs, including information such as timestamps, attack types, severity levels, geolocation data, traffic types, and anomaly scores. The dataset helps identify attack trends, analyze threat severity, and generate actionable insights for cybersecurity professionals.
 
-## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+Business Requirements
 
+Identify and categorize different types of cybersecurity attacks.
 
-## Business Requirements
-* Describe your business requirements
+Assess the severity and frequency of security breaches over time.
 
+Analyze geographical distribution of attacks to pinpoint high-risk areas.
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+Build predictive models to anticipate potential security threats.
 
-## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+Provide interactive data visualisations for cybersecurity decision-makers.
 
-## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+Hypothesis and Validation
 
-## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+Hypothesis 1: Cybersecurity attacks occur more frequently during peak business hours.
 
-## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+Validation: Analyse attack timestamps and compare attack frequency across different hours.
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+Hypothesis 2: Specific attack types, such as DDoS, are more severe than others.
 
-## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+Validation: Compare severity levels associated with different attack types.
 
-## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+Hypothesis 3: High-traffic network segments are more prone to cyberattacks.
 
-## Deployment
-### Heroku
+Validation: Examine correlations between traffic type and attack occurrences.
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
+Project Plan
 
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+Data Collection: Load the dataset and handle missing values.
+
+Data Cleaning & Transformation: Standardize columns, extract geolocation information, and categorize severity levels.
+
+Exploratory Data Analysis (EDA): Generate descriptive statistics and detect patterns in the dataset.
+
+Data Visualisation: Create interactive plots, time series graphs, and geo-visualisations.
+
+Predictive Modeling: Build machine learning models for anomaly detection and severity prediction.
+
+Dashboard Development: Design an intuitive dashboard for cybersecurity insights.
+
+Evaluation & Reporting: Summarize findings and assess the effectiveness of the models and visualisations.
+
+Mapping Business Requirements to Data Visualisations
+
+Business Requirement
+
+Data Visualisation
+
+Identify attack types
+
+Bar charts, pie charts
+
+Assess severity levels
+
+Donut charts, stacked bar plots
+
+Geographical distribution of attacks
+
+Scatter maps, choropleth maps
+
+Attack frequency over time
+
+Time series line charts
+
+Predictive modeling of security threats
+
+Regression plots, classification reports
+
+Analysis Techniques Used
+
+Exploratory Data Analysis (EDA): Summary statistics, distribution plots, and correlation analysis.
+
+Regression Analysis: Evaluating relationships between network traffic and anomaly scores.
+
+Classification Models: Using Random Forest for severity level prediction.
+
+Geospatial Analysis: Mapping attack locations with interactive geo-plots.
+
+Time Series Analysis: Identifying attack trends over time.
+
+Limitations & Challenges:
+
+Missing or incomplete geolocation data.
+
+Class imbalance in attack severity levels.
+
+Potential bias in dataset sampling.
+
+Ethical Considerations
+
+Data Privacy: No personally identifiable information (PII) is used.
+
+Bias & Fairness: Ensured data-driven insights without manipulation.
+
+Security Compliance: Adhered to cybersecurity best practices while handling sensitive attack data.
+
+Dashboard Design
+
+Home Page: Overview of security breaches and attack summaries.
+
+Attack Analysis: Visualizations for attack types, severities, and trends.
+
+Geospatial Insights: Interactive maps showing attack locations.
+
+Predictive Insights: Anomaly detection and security threat predictions.
+
+User Interaction Features: Filters, drill-down capabilities, and customizable views.
+
+Unfixed Bugs
+
+Geolocation Mapping Issues: Some attacks lack valid city/state information, leading to missing data points in maps.
+
+Class Imbalance in Predictive Models: Some attack types have limited data, affecting prediction accuracy.
+
+Dashboard Performance on Large Datasets: Rendering interactive visualizations may slow down with high data volumes.
+
+Future Improvements:
+
+Enhance dataset quality by incorporating real-time threat intelligence feeds.
+
+Implement additional machine learning models for improved anomaly detection.
+
+Optimize dashboard performance for large-scale security datasets.
 
 
 ## Main Data Analysis Libraries
