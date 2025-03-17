@@ -5,20 +5,12 @@ Security Breach Analysis
 Security Breach Analysis is a comprehensive data analysis project designed to explore, analyse, and visualise cybersecurity attack data. The project aims to provide valuable insights into security threats, attack patterns, and their impact using various data analysis techniques and visualisations.
 
 Dataset Content
-
-The dataset used in this project consists of cybersecurity attack logs, including information such as timestamps, attack types, severity levels, geolocation data, traffic types, and anomaly scores. The dataset helps identify attack trends, analyze threat severity, and generate actionable insights for cybersecurity professionals.
-
-Business Requirements
-
-Identify and categorize different types of cybersecurity attacks.
-
-Assess the severity and frequency of security breaches over time.
-
-Analyze geographical distribution of attacks to pinpoint high-risk areas.
-
-Build predictive models to anticipate potential security threats.
-
-Provide interactive data visualisations for cybersecurity decision-makers.
+The dataset contains 40,000 records with 28 columns related to cybersecurity attacks, including IP addresses, ports, protocols, attack types, severity levels, timestamps, and network segments. The dataset is cleaned and preprocessed to facilitate in-depth analysis and visualisation of security breaches.
+The objective of this project is to:
+•	Identify patterns and trends in cybersecurity breaches.
+•	Detect anomalies and categorize different attack types.
+•	Visualize attack distribution geographically.
+•	Predict the severity of attacks based on traffic and anomaly scores.
 
 Hypothesis and Validation
 
@@ -104,33 +96,90 @@ Bias & Fairness: Ensured data-driven insights without manipulation.
 
 Security Compliance: Adhered to cybersecurity best practices while handling sensitive attack data.
 
-Dashboard Design
+# Power BI Dashboard Design
 
-Home Page: Overview of security breaches and attack summaries.
+The purpose of this Power BI report is to:
 
-Attack Analysis: Visualizations for attack types, severities, and trends.
+Analyse cybersecurity attack patterns based on geo-location and network traffic data.
 
-Geospatial Insights: Interactive maps showing attack locations.
+Identify the most attacked cities and states.
 
-Predictive Insights: Anomaly detection and security threat predictions.
+Categorize attacks based on severity level and traffic type.
 
-User Interaction Features: Filters, drill-down capabilities, and customizable views.
+Provide insights into intrusion attempts, malware incidents, and DDoS attacks.
+
+Visualise attack trends over time to aid in proactive threat detection.
+
+** Hypothesis Statements
+
+Higher attack rates in urban areas - Cybersecurity attacks are more frequent in densely populated cities due to higher digital infrastructure.
+
+DDoS attacks dominate high-traffic regions - Locations with high internet usage are more prone to Distributed Denial of Service (DDoS) attacks.
+
+Severity levels are correlated with attack type - More sophisticated attacks like malware and intrusion attempts have a higher severity rating.
+
+Certain traffic types are more vulnerable - HTTP and DNS traffic are more likely to be exploited in cyber-attacks than other protocols.
+
+Attack frequency follows seasonal patterns - Cybersecurity incidents increase during specific timeframes, such as year-end or holiday seasons.
+
+Key Features & Findings
+
+KPI Metrics:
+
+Total attack count: 406 (Example Value)
+
+Most attacked city: Agra (Example Value)
+
+Most common traffic type targeted: DNS
+
+Most frequent attack type: DDoS
+
+Time Series Analysis:-
+
+Attack frequency fluctuates, with notable spikes in March, July, and November.
+
+Trendlines suggest periodic surges, possibly linked to global cyber incidents.
+
+Geo-Location Insights:-
+
+Cyberattacks are concentrated in Agra, Ahmedabad, and Allahabad.
+
+The highest attack densities are in urban areas.
+
+Attack Type Breakdown:-
+
+DDoS attacks account for the largest share of incidents.
+
+Malware and intrusion attacks are significant, indicating the need for stronger endpoint security.
+
+Network Segment Analysis:-
+
+Segments A and C experience higher attack volumes, suggesting vulnerabilities in specific network sections.
+![alt text](<SecurityBreachAnalyser Dashboard.png>)
+
+** Next Steps
+
+1. Implement predictive analytics to forecast attack trends.
+
+2. Enhance real-time monitoring using Power BI alerts.
+
+3. Integrate AI-driven anomaly detection for proactive threat mitigation.
 
 Unfixed Bugs
 
-Geolocation Mapping Issues: Some attacks lack valid city/state information, leading to missing data points in maps.
+1. Geolocation Mapping Issues: Due to PowerBI trial period limitations, Map did not used for geolocation analysis.
 
-Class Imbalance in Predictive Models: Some attack types have limited data, affecting prediction accuracy.
+2. Class Imbalance in Predictive Models: Some attack types have limited data, affecting prediction accuracy.
 
-Dashboard Performance on Large Datasets: Rendering interactive visualizations may slow down with high data volumes.
+3. Dashboard Performance on Large Datasets: Rendering interactive visualisations may slow down with high data volumes.
 
 Future Improvements:
 
-Enhance dataset quality by incorporating real-time threat intelligence feeds.
+1. Enhance dataset quality by incorporating real-time threat intelligence feeds.
 
-Implement additional machine learning models for improved anomaly detection.
+2. Implement additional machine learning models for improved anomaly detection.
 
-Optimize dashboard performance for large-scale security datasets.
+3. Optimise dashboard performance for large-scale security datasets.
 
 
 ## Main Data Analysis Libraries
