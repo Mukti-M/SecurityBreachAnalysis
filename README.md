@@ -93,15 +93,15 @@ Null Hypothesis (H0): DDoS attacks do not show any specific trend over time.
 
 3. Security Compliance: Adhered to cybersecurity best practices while handling sensitive attack data.
 
+
 # Power BI Dashboard Design
 
-The purpose of this Power BI report is to
-
-Analyse cybersecurity attack patterns based on geo-location and network traffic data.
-Identify the most attacked cities and states.
-Categorize attacks based on severity level and traffic type.
-Provide insights into intrusion attempts, malware incidents, and DDoS attacks.
-Visualise attack trends over time to aid in proactive threat detection.
+The purpose of this Power BI report -
+* Analyse cybersecurity attack patterns based on geo-location and network traffic data.
+* Identify the most attacked cities and states.
+* Categorize attacks based on severity level and traffic type.
+* Provide insights into intrusion attempts, malware incidents, and DDoS attacks.
+* Visualise attack trends over time to aid in proactive threat detection.
 
 ### Hypothesis Statements
 
@@ -132,7 +132,9 @@ Malware and intrusion attacks are significant, indicating the need for stronger 
 Network Segment Analysis:-
 Segments A and C experience higher attack volumes, suggesting vulnerabilities in specific network sections.
 
-![alt text](<SecurityBreachAnalyser Dashboard.png>)
+https://app.powerbi.com/groups/me/reports/f9380fe9-2960-4760-a081-901fd422d2ca/b5de158133de0a9acb06?experience=power-bi
+
+![alt text](SecurityBreachAnalyserDashboard.png)
 
 ##### Next Steps
 1. Implement predictive analytics to forecast attack trends.
