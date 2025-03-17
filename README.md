@@ -1,10 +1,10 @@
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Security Breach Analysis
+## Security Breach Analysis
 
 Security Breach Analysis is a comprehensive data analysis project designed to explore, analyse, and visualise cybersecurity attack data. The project aims to provide valuable insights into security threats, attack patterns, and their impact using various data analysis techniques and visualisations.
 
-Dataset Content
+# Dataset Content
 The dataset contains 40,000 records with 28 columns related to cybersecurity attacks, including IP addresses, ports, protocols, attack types, severity levels, timestamps, and network segments. The dataset is cleaned and preprocessed to facilitate in-depth analysis and visualisation of security breaches.
 The objective of this project is to:
 •	Identify patterns and trends in cybersecurity breaches.
@@ -12,7 +12,7 @@ The objective of this project is to:
 •	Visualize attack distribution geographically.
 •	Predict the severity of attacks based on traffic and anomaly scores.
 
-Hypothesis and Validation
+# Hypothesis and Validation
 
 Hypothesis 1: Cybersecurity attacks occur more frequently during peak business hours.
 
@@ -26,7 +26,7 @@ Hypothesis 3: High-traffic network segments are more prone to cyberattacks.
 
 Validation: Examine correlations between traffic type and attack occurrences.
 
-Project Plan
+# Project Plan
 
 Data Collection: Load the dataset and handle missing values.
 
@@ -44,51 +44,40 @@ Evaluation & Reporting: Summarize findings and assess the effectiveness of the m
 
 Mapping Business Requirements to Data Visualisations
 
-Business Requirement
+# Business Requirement -
+Data Visualisation 
 
-Data Visualisation
+Identify attack types | Bar charts, pie charts |
 
-Identify attack types
+Assess severity levels | Donut charts, stacked bar plots |
 
-Bar charts, pie charts
+Geographical distribution of attacks | Scatter Map |
 
-Assess severity levels
+Attack frequency over time | Time series line charts |
 
-Donut charts, stacked bar plots
+Predictive modeling of security threats | Regression plots, classification reports |
 
-Geographical distribution of attacks
+# Analysis Techniques Used -
 
-Scatter maps, choropleth maps
+Exploratory Data Analysis (EDA) - Summary statistics, distribution plots, and correlation analysis.
 
-Attack frequency over time
+Regression Analysis - Evaluating relationships between network traffic and anomaly scores.
 
-Time series line charts
+Classification Models - Using Random Forest for severity level prediction.
 
-Predictive modeling of security threats
+Geospatial Analysis - Mapping attack locations with interactive geo-plots.
 
-Regression plots, classification reports
+Time Series Analysis - Identifying attack trends over time.
 
-Analysis Techniques Used
+# Limitations & Challenges:
 
-Exploratory Data Analysis (EDA): Summary statistics, distribution plots, and correlation analysis.
+1. Missing or incomplete geolocation data.
 
-Regression Analysis: Evaluating relationships between network traffic and anomaly scores.
+2. Class imbalance in attack severity levels.
 
-Classification Models: Using Random Forest for severity level prediction.
+3. Potential bias in dataset sampling.
 
-Geospatial Analysis: Mapping attack locations with interactive geo-plots.
-
-Time Series Analysis: Identifying attack trends over time.
-
-Limitations & Challenges:
-
-Missing or incomplete geolocation data.
-
-Class imbalance in attack severity levels.
-
-Potential bias in dataset sampling.
-
-Ethical Considerations
+# Ethical Considerations
 
 Data Privacy: No personally identifiable information (PII) is used.
 
@@ -183,8 +172,12 @@ Future Improvements:
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.io as pio
 
 ## Credits 
 
@@ -204,5 +197,4 @@ Future Improvements:
 
 
 
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+## Acknowledgements
