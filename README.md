@@ -1,75 +1,82 @@
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Security Breach Analysis
+# Security Breach Analysis
 
 Security Breach Analysis is a comprehensive data analysis project designed to explore, analyse, and visualise cybersecurity attack data. The project aims to provide valuable insights into security threats, attack patterns, and their impact using various data analysis techniques and visualisations.
 
 # Dataset Content
-The dataset contains 40,000 records with 28 columns related to cybersecurity attacks, including IP addresses, ports, protocols, attack types, severity levels, timestamps, and network segments. The dataset is cleaned and preprocessed to facilitate in-depth analysis and visualisation of security breaches.
-The objective of this project is to:
-•	Identify patterns and trends in cybersecurity breaches.
-•	Detect anomalies and categorize different attack types.
-•	Visualize attack distribution geographically.
-•	Predict the severity of attacks based on traffic and anomaly scores.
+
+The dataset contains 40,000 records with 25 columns related to cybersecurity attacks, including IP addresses, ports, protocols, attack types, severity levels, timestamps, and network segments. The dataset is cleaned and preprocessed to facilitate in-depth analysis and visualisation of security breaches.
+### The objective of this project -
+1. Identify patterns and trends in cybersecurity breaches.
+2. Detect anomalies and categorize different attack types.
+3. isualise attack distribution geographically.
+4. Predict the severity of attacks based on traffic and anomaly scores.
+
 
 # Hypothesis and Validation
 
-Hypothesis 1: Cybersecurity attacks occur more frequently during peak business hours.
+#### Hypothesis 1 -
 
-Validation: Analyse attack timestamps and compare attack frequency across different hours.
+Null Hypothesis (H0): There is no significant relationship between the type of traffic and the anomaly scores.
+#### Validation: Perform regression analysis and evaluate the mean squared error (MSE).
 
-Hypothesis 2: Specific attack types, such as DDoS, are more severe than others.
+#### Hypothesis 2 -
 
-Validation: Compare severity levels associated with different attack types.
+Null Hypothesis (H0): The severity level of cyber attacks is independent of the traffic type and anomaly scores.
+#### Validation: Build a predictive model (e.g., Random Forest) and evaluate its accuracy.
 
-Hypothesis 3: High-traffic network segments are more prone to cyberattacks.
+#### Hypothesis 3 -
 
-Validation: Examine correlations between traffic type and attack occurrences.
+Null Hypothesis (H0): The distribution of cyber attacks is uniform across different cities and states.
+#### Validation: Analyse the geographical distribution of attacks using visualisations and statistical tests.
+
+#### Hypothesis 4 -
+
+Null Hypothesis (H0): DDoS attacks do not show any specific trend over time.
+#### Validation: Analyse DDoS attack trends over time using line charts and heatmaps.
 
 # Project Plan
 
-Data Collection: Load the dataset and handle missing values.
+#### 1. Data Collection: Load the dataset and handle missing values.
 
-Data Cleaning & Transformation: Standardize columns, extract geolocation information, and categorize severity levels.
+#### 2. Data Cleaning & Transformation: Standardize columns, extract geolocation information, and categorize severity levels.
 
-Exploratory Data Analysis (EDA): Generate descriptive statistics and detect patterns in the dataset.
+#### 3. Exploratory Data Analysis (EDA): Generate descriptive statistics and detect patterns in the dataset.
 
-Data Visualisation: Create interactive plots, time series graphs, and geo-visualisations.
+#### 4. Data Visualisation: Create interactive plots, time series graphs, and geo-visualisations.
 
-Predictive Modeling: Build machine learning models for anomaly detection and severity prediction.
+#### 5. Predictive Modeling: Build machine learning models for anomaly detection and severity prediction.
 
-Dashboard Development: Design an intuitive dashboard for cybersecurity insights.
+#### 6. Dashboard Development: Design an interactive dashboard for cybersecurity insights.
 
-Evaluation & Reporting: Summarize findings and assess the effectiveness of the models and visualisations.
+#### 7. Evaluation & Reporting: Summarize findings and assess the effectiveness of the models and visualisations.
 
-Mapping Business Requirements to Data Visualisations
+#### 8. Mapping Business Requirements to Data Visualisations
 
-# Business Requirement -
-Data Visualisation 
+# Business Requirement :-
 
-Identify attack types | Bar charts, pie charts |
+|   Data Analysis   | Visualisation Model       | 
+| ------------- |:-------------:| 
+|Identify attack types     |  Bar charts, pie chart| 
+| Assess severity levels      |  Donut charts, stacked bar plots  |   
+| Geographical distribution of attacks |  Scatter Map    |    
+| Attack frequency over time |  Time series line charts |
+| Predictive modeling of security threats |  Regression plots, Classification Reports |
 
-Assess severity levels | Donut charts, stacked bar plots |
-
-Geographical distribution of attacks | Scatter Map |
-
-Attack frequency over time | Time series line charts |
-
-Predictive modeling of security threats | Regression plots, classification reports |
-
-# Analysis Techniques Used -
+# Analysis Techniques Used :-
 
 Exploratory Data Analysis (EDA) - Summary statistics, distribution plots, and correlation analysis.
 
 Regression Analysis - Evaluating relationships between network traffic and anomaly scores.
 
-Classification Models - Using Random Forest for severity level prediction.
-
-Geospatial Analysis - Mapping attack locations with interactive geo-plots.
+Classification Models - Random Forest classifier used to predict attack severity levels.
 
 Time Series Analysis - Identifying attack trends over time.
 
-# Limitations & Challenges:
+Geospatial Analysis - Mapping attack locations with interactive geo-plots.
+
+# Limitations & Challenges :-
 
 1. Missing or incomplete geolocation data.
 
@@ -78,113 +85,84 @@ Time Series Analysis - Identifying attack trends over time.
 3. Potential bias in dataset sampling.
 
 # Ethical Considerations
+1. Data Privacy: No personally identifiable information (PII) is used.
 
-Data Privacy: No personally identifiable information (PII) is used.
+2. Bias & Fairness: Ensured data-driven insights without manipulation.
 
-Bias & Fairness: Ensured data-driven insights without manipulation.
-
-Security Compliance: Adhered to cybersecurity best practices while handling sensitive attack data.
+3. Security Compliance: Adhered to cybersecurity best practices while handling sensitive attack data.
 
 # Power BI Dashboard Design
 
-The purpose of this Power BI report is to:
+The purpose of this Power BI report is to
 
 Analyse cybersecurity attack patterns based on geo-location and network traffic data.
-
 Identify the most attacked cities and states.
-
 Categorize attacks based on severity level and traffic type.
-
 Provide insights into intrusion attempts, malware incidents, and DDoS attacks.
-
 Visualise attack trends over time to aid in proactive threat detection.
 
-** Hypothesis Statements
+### Hypothesis Statements
 
-Higher attack rates in urban areas - Cybersecurity attacks are more frequent in densely populated cities due to higher digital infrastructure.
+1. Higher attack rates in urban areas - Cybersecurity attacks are more frequent in densely populated cities due to higher digital infrastructure.
+2. DDoS attacks dominate high-traffic regions - Locations with high internet usage are more prone to Distributed Denial of Service (DDoS) attacks.
+3. Severity levels are correlated with attack type - More sophisticated attacks like malware and intrusion attempts have a higher severity rating.
+4. Certain traffic types are more vulnerable - HTTP and DNS traffic are more likely to be exploited in cyber-attacks than other protocols.
+5. Attack frequency follows seasonal patterns - Cybersecurity incidents increase during specific timeframes, such as year-end or holiday seasons.
 
-DDoS attacks dominate high-traffic regions - Locations with high internet usage are more prone to Distributed Denial of Service (DDoS) attacks.
-
-Severity levels are correlated with attack type - More sophisticated attacks like malware and intrusion attempts have a higher severity rating.
-
-Certain traffic types are more vulnerable - HTTP and DNS traffic are more likely to be exploited in cyber-attacks than other protocols.
-
-Attack frequency follows seasonal patterns - Cybersecurity incidents increase during specific timeframes, such as year-end or holiday seasons.
-
-Key Features & Findings
-
+### Key Features & Findings -
 KPI Metrics:
-
 Total attack count: 406 (Example Value)
-
 Most attacked city: Agra (Example Value)
-
 Most common traffic type targeted: DNS
-
 Most frequent attack type: DDoS
 
 Time Series Analysis:-
-
 Attack frequency fluctuates, with notable spikes in March, July, and November.
-
 Trendlines suggest periodic surges, possibly linked to global cyber incidents.
 
 Geo-Location Insights:-
-
 Cyberattacks are concentrated in Agra, Ahmedabad, and Allahabad.
-
 The highest attack densities are in urban areas.
 
 Attack Type Breakdown:-
-
 DDoS attacks account for the largest share of incidents.
-
 Malware and intrusion attacks are significant, indicating the need for stronger endpoint security.
-
 Network Segment Analysis:-
-
 Segments A and C experience higher attack volumes, suggesting vulnerabilities in specific network sections.
+
 ![alt text](<SecurityBreachAnalyser Dashboard.png>)
 
-** Next Steps
-
+##### Next Steps
 1. Implement predictive analytics to forecast attack trends.
-
 2. Enhance real-time monitoring using Power BI alerts.
-
 3. Integrate AI-driven anomaly detection for proactive threat mitigation.
 
-Unfixed Bugs
+### Unfixed Bugs
 
 1. Geolocation Mapping Issues: Due to PowerBI trial period limitations, Map did not used for geolocation analysis.
+2. Class Imbalance in Predictive Models - Some attack types have limited data, affecting prediction accuracy.
+3. Dashboard Performance on Large Datasets- Rendering interactive visualisations may slow down with high data volumes.
 
-2. Class Imbalance in Predictive Models: Some attack types have limited data, affecting prediction accuracy.
-
-3. Dashboard Performance on Large Datasets: Rendering interactive visualisations may slow down with high data volumes.
-
-Future Improvements:
+### Future Improvements:
 
 1. Enhance dataset quality by incorporating real-time threat intelligence feeds.
-
 2. Implement additional machine learning models for improved anomaly detection.
-
 3. Optimise dashboard performance for large-scale security datasets.
 
-
 ## Main Data Analysis Libraries
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-import seaborn as sns
-import matplotlib.pyplot as plt
-import plotly.io as pio
 
-## Credits 
+pandas: Used for data manipulation and analysis.
+numpy: Used for numerical operations.
+plotly: Used for interactive visualisations.
+seaborn: Used for statistical visualisations.
+scikit-learn: Used for predictive modeling and regression analysis.
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+## Credits
 
-### Content 
+- In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+- You can break the credits section up into Content and Media, depending on what you have included in your project.
+
+### Content
 
 - The text for the Home page was taken from Wikipedia Article A
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
@@ -195,6 +173,7 @@ import plotly.io as pio
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
-
-
 ## Acknowledgements
+
+Thank you to my instructors and peers for their valuable feedback and support throughout this project.
+Special thanks to Vasi, Paul for their guidance on data visualisation techniques.
