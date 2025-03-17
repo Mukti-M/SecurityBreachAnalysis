@@ -4,6 +4,8 @@
 
 Security Breach Analysis is a comprehensive data analysis project designed to explore, analyse, and visualise cybersecurity attack data. The project aims to provide valuable insights into security threats, attack patterns, and their impact using various data analysis techniques and visualisations.
 
+<img src="security-alert.jpg" alt="Security Alert" height="300" width= "800" style="box-shadow: 5px 5px 10px gray;">
+
 # Dataset Content
 
 The dataset contains 40,000 records with 25 columns related to cybersecurity attacks, including IP addresses, ports, protocols, attack types, severity levels, timestamps, and network segments. The dataset is cleaned and preprocessed to facilitate in-depth analysis and visualisation of security breaches.
@@ -66,15 +68,15 @@ Null Hypothesis (H0): DDoS attacks do not show any specific trend over time.
 
 # Analysis Techniques Used :-
 
-Exploratory Data Analysis (EDA) - Summary statistics, distribution plots, and correlation analysis.
+* Exploratory Data Analysis (EDA) - Summary statistics, distribution plots, and correlation analysis.
 
-Regression Analysis - Evaluating relationships between network traffic and anomaly scores.
+* Regression Analysis - Evaluating relationships between network traffic and anomaly scores.
 
-Classification Models - Random Forest classifier used to predict attack severity levels.
+* Classification Models - Random Forest classifier used to predict attack severity levels.
 
-Time Series Analysis - Identifying attack trends over time.
+* Time Series Analysis - Identifying attack trends over time.
 
-Geospatial Analysis - Mapping attack locations with interactive geo-plots.
+* Geospatial Analysis - Mapping attack locations with interactive geo-plots.
 
 # Limitations & Challenges :-
 
@@ -139,7 +141,7 @@ Segments A and C experience higher attack volumes, suggesting vulnerabilities in
 
 ### Unfixed Bugs
 
-1. Geolocation Mapping Issues: Due to PowerBI trial period limitations, Map did not used for geolocation analysis.
+1. Geolocation Mapping Issues: Due to PowerBI trial period limitations, Map did not used for geolocation analysis in Power BI report.
 2. Class Imbalance in Predictive Models - Some attack types have limited data, affecting prediction accuracy.
 3. Dashboard Performance on Large Datasets- Rendering interactive visualisations may slow down with high data volumes.
 
@@ -151,29 +153,28 @@ Segments A and C experience higher attack volumes, suggesting vulnerabilities in
 
 ## Main Data Analysis Libraries
 
-pandas: Used for data manipulation and analysis.
-numpy: Used for numerical operations.
-plotly: Used for interactive visualisations.
-seaborn: Used for statistical visualisations.
-scikit-learn: Used for predictive modeling and regression analysis.
+* pandas: Used for data manipulation and analysis.
+* numpy: Used for numerical operations.
+* plotly: Used for interactive visualisations.
+* seaborn: Used for statistical visualisations.
+* scikit-learn: Used for predictive modeling and regression analysis.
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+#### Content
+* The text for this project was sourced from various references, including ChatGPT for formatting summaries and Kaggle for dataset information.
 
-### Content
+* Instructions on how to implement the dashboard were followed from this YouTube tutorial, which helped me understand how to create interactive Power BI reports.
+1. https://www.youtube.com/watch?v=H84UJn1CiWo&list=PL6Omre3duO-OGTAMuFuDOS8wMuuxmyaiX
+2. https://www.youtube.com/watch?v=wZATWjV4scg&list=PL6Omre3duO-OGTAMuFuDOS8wMuuxmyaiX&index=3
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+* The code for the data analysis was implemented with the assistance of various AI tools, such as ChatGPT and Perplexity etc.
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+#### Media
+* The photos and logos used in this project were taken from open-source sites like Google etc.
+  https://pixabay.com/photos/security-alarm-monitor-cyber-5043368/
 
 ## Acknowledgements
 
-Thank you to my instructors and peers for their valuable feedback and support throughout this project.
-Special thanks to Vasi, Paul for their guidance on data visualisation techniques.
+I want to thank my instructors and peers for their helpful feedback and support throughout this project.
+A special thanks to Vasi and Paul for their guidance and support. Finally, I am very grateful to my family for encouraging me and keeping me motivated to finish the project on time.
