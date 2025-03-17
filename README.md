@@ -15,7 +15,6 @@ The dataset contains 40,000 records with 25 columns related to cybersecurity att
 3. isualise attack distribution geographically.
 4. Predict the severity of attacks based on traffic and anomaly scores.
 
-
 # Hypothesis and Validation
 
 #### Hypothesis 1 -
@@ -92,7 +91,6 @@ Null Hypothesis (H0): DDoS attacks do not show any specific trend over time.
 2. Bias & Fairness: Ensured data-driven insights without manipulation.
 
 3. Security Compliance: Adhered to cybersecurity best practices while handling sensitive attack data.
-
 
 # Power BI Dashboard Design
 
